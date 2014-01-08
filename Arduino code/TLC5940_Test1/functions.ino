@@ -10,8 +10,6 @@ int sinRed(float x, int y){
   if(y == 0 && DEBUG > 1){
     Serial.print(x);
     Serial.print(",");
-    Serial.print(val);
-    Serial.print(",");
     Serial.print(map_double(val, 0.0, 1.0, 0.0, 4095.0));
   }
   return map_double(val, 0.0, 1.0, 0, potValue);

@@ -8,11 +8,6 @@
 
 float pi = 22/7; // Self-explainatory
 
-/* Offsets in relation to stuff */
-float offsetRed = -pi/2;
-float offsetGreen = (pi/3)*4 - pi/2;
-float offsetBlue = (pi/3)*8 - pi/2;
-
 /* Initialize arrays */
 int chanRed[NUM_TLCS*16/3];
 int chanGreen[NUM_TLCS*16/3];
