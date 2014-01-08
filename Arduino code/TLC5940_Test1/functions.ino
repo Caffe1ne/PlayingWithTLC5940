@@ -7,7 +7,7 @@ float map_double(double x, double in_min, double in_max, double out_min, double 
 int sinRed(float x, int y){
   float valUnconstrained = ((2 * 1.5) / pi * asin(sin(2 * pi / 1 * x + (pi / 2))) + 0.5);
   float val = constrain(valUnconstrained, 0.0, 1.0);
-  if(y == 0){
+  if(y == 0 && DEBUG > 1){
     Serial.print(x);
     Serial.print(",");
     Serial.print(val);
@@ -20,7 +20,7 @@ int sinRed(float x, int y){
 int sinGreen(float x, int y){
   float valUnconstrained = ((2 * 1.5) / pi * asin(sin(2 * pi / 1 * x - (pi / 6))) + 0.5);
   float val = constrain(valUnconstrained, 0.0, 1.0);
-   if(y == 0){
+   if(y == 0 && DEBUG > 1){
     Serial.print(",");
     Serial.print(map_double(val, 0.0, 1.0, 0, potValue));
    }
@@ -30,7 +30,7 @@ int sinGreen(float x, int y){
 int sinBlue(float x, int y){
   float valUnconstrained = ((2 * 1.5) / pi * asin(sin(2 * pi / 1 * x - 5 * (pi / 6))) + 0.5);
   float val = constrain(valUnconstrained, 0.0, 1.0);
-   if(y == 0){
+   if(y == 0 && DEBUG > 1){
     Serial.print(",");
     Serial.println(map_double(val, 0.0, 1.0, 0, potValue));
    }

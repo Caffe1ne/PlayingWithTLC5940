@@ -1,7 +1,7 @@
 // YES THIS FILE IS MESSY I KNOW
 
 #include <Tlc5940.h>
-#define DEBUG 2 // 0 == off, 1 == errors, 2 == all the things
+#define DEBUG 2 // 0 == off, 1 == errors, 2 == more things, 3 == all the things
 #define NUMBER_OF_LEDS 21 // Number of LEDS in use
 #define MAX_PWM_VALUE 4095 // Maximum value of PWM driver. For TLC5940s that's 4095
 #define potValue 4095
